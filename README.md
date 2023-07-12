@@ -1,5 +1,5 @@
 This is a project made with ReactJs, tailwind and Firebase,
-You can register an account, login , personalize your profile and then add friends to be able to chat with them ..............
+You can register an account, login , personalize your profile and then add friends to be able to chat with them
 
 # Getting Started with Create React App
 
