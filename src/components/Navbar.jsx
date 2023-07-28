@@ -36,7 +36,7 @@ function Navbar() {
           </Link>
         </div>
         <div className="flex justify-between items-center">
-          {/* se o user for null o displayAccount vai ser true e assim vai mostrar o Account .. se houver um user o displayAccount vai ser false e assim aparece o Sign In */}
+          {/* f the user is null, the displayAccount will be true and this will show the Account .. if there is a user, the displayAccount will be false and this will show the Sign In */}
           {displayAccount === true ? (
             <Link to="/account">
               <button className="text-white mr-4 font-bold">Account</button>
@@ -46,7 +46,7 @@ function Navbar() {
               <button className="text-white mr-4 font-bold">Sign In</button>
             </Link>
           )}
-          {/* se tivermos logados o botao de signUp desaparece e aparece um LogOut no lugar dele  */}
+          {/* if we are logged in, the signUp button disappears and a LogOut appears in its place */}
           {displayAccount === true ? (
             <button
               className="bg-red-600 px-4 py-2 rounded p-1 text-white"

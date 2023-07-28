@@ -13,12 +13,6 @@ function RowElements({ movie }) {
   const favoriteMovies = useSelector(selectFavoriteMovies);
   const dispatch = useDispatch();
 
-  {
-    /* usar o useEffect para fazer fetch da lista de filmes favoritos do firestore semper que muda de utilizador*/
-  }
-
-  /* faz com que apareçam os corações preenchidos se tiverem como favoritos na base de dados  */
-
   useEffect(() => {
     if (favoriteMovies?.some((item) => item.id === movie.id)) {
       setLike(true);
