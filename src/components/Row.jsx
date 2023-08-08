@@ -15,7 +15,7 @@ function Row({ title, fetchUrl, rowId }) {
     };
 
     fetchData();
-  }, [movies]);
+  }, []);
 
   const slideLeft = () => {
     var slider = document.getElementById("slider" + rowId);
