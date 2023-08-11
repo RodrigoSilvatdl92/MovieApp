@@ -20,7 +20,7 @@ function Home() {
     onSnapshot(doc(db, "users", `${currentUser}`), (doc) => {
       dispatch(setListOfFavoriteMovies(doc.data()?.favoriteMovies));
     });
-  }, [currentUser]);
+  }, [currentUser, dispatch]);
 
   return (
     <div>
